@@ -1,0 +1,901 @@
+{
+  "metrics": {
+    "productivity": {
+      "r2": 0.7586513239717809,
+      "mae": 3.1059584658957133
+    },
+    "wellbeing": {
+      "r2": 0.751660323857606,
+      "mae": 2.918858818716475
+    }
+  },
+  "n_rows": 3000,
+  "chronotypes": {
+    "morning": {
+      "wake": "06:00",
+      "bed": "22:15",
+      "before": {
+        "productivity": 61.1,
+        "wellbeing": 50.7
+      },
+      "after": {
+        "productivity": 71.7,
+        "wellbeing": 64.6
+      },
+      "features_before": {
+        "sleep_hours": 6.5,
+        "sleep_consistency": 0.4,
+        "study_hours": 9.5,
+        "peak_focus_ratio": 0.63,
+        "exercise_min": 0,
+        "screen_hours": 8.45,
+        "break_count": 0,
+        "meal_regularity": 0.47,
+        "leisure_hours": 1.5,
+        "task_switches": 12,
+        "free_buffer_min": 90
+      },
+      "features_after": {
+        "sleep_hours": 7.75,
+        "sleep_consistency": 0.9,
+        "study_hours": 9.5,
+        "peak_focus_ratio": 0.92,
+        "exercise_min": 30,
+        "screen_hours": 8.45,
+        "break_count": 1,
+        "meal_regularity": 0.92,
+        "leisure_hours": 1.5,
+        "task_switches": 15,
+        "free_buffer_min": 60
+      },
+      "notes": [
+        "Added Breakfast to keep meals regular.",
+        "Added 30 min exercise - strongest wellbeing lever in the model.",
+        "Inserted 1 short breaks after long focus blocks.",
+        "'Blockchain internship course' scheduled 06:45-07:30 (energy 61%) - deep focus in a peak window.",
+        "'Assignment / coding project' scheduled 16:45-18:45 (energy 64%) - deep focus in a peak window."
+      ],
+      "schedule_after": [
+        {
+          "Start": "06:00",
+          "End": "06:45",
+          "Task": "Revise lecture notes",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 2,
+          "Energy %": 40
+        },
+        {
+          "Start": "06:45",
+          "End": "07:30",
+          "Task": "Blockchain internship course",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 3,
+          "Energy %": 61
+        },
+        {
+          "Start": "07:30",
+          "End": "08:00",
+          "Task": "Breakfast",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 78
+        },
+        {
+          "Start": "08:15",
+          "End": "09:00",
+          "Task": "Commute to college",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 94
+        },
+        {
+          "Start": "09:00",
+          "End": "12:30",
+          "Task": "Morning lectures",
+          "Category": "study",
+          "Minutes": 210,
+          "Focus": 2,
+          "Energy %": 74
+        },
+        {
+          "Start": "13:00",
+          "End": "13:30",
+          "Task": "Lunch",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 42
+        },
+        {
+          "Start": "13:30",
+          "End": "16:00",
+          "Task": "Afternoon lectures",
+          "Category": "study",
+          "Minutes": 150,
+          "Focus": 2,
+          "Energy %": 66
+        },
+        {
+          "Start": "16:00",
+          "End": "16:45",
+          "Task": "Commute home",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 77
+        },
+        {
+          "Start": "16:45",
+          "End": "18:45",
+          "Task": "Assignment / coding project",
+          "Category": "study",
+          "Minutes": 120,
+          "Focus": 3,
+          "Energy %": 64
+        },
+        {
+          "Start": "18:45",
+          "End": "19:00",
+          "Task": "Short break",
+          "Category": "break",
+          "Minutes": 15,
+          "Focus": 1,
+          "Energy %": 49
+        },
+        {
+          "Start": "19:00",
+          "End": "19:30",
+          "Task": "Exercise (walk/workout)",
+          "Category": "exercise",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 44
+        },
+        {
+          "Start": "19:30",
+          "End": "20:00",
+          "Task": "Dinner",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 39
+        },
+        {
+          "Start": "20:15",
+          "End": "21:00",
+          "Task": "Scroll social media",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 32
+        },
+        {
+          "Start": "21:00",
+          "End": "21:30",
+          "Task": "Household chores",
+          "Category": "chores",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 29
+        },
+        {
+          "Start": "21:30",
+          "End": "22:15",
+          "Task": "Gaming / series",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 27
+        }
+      ],
+      "schedule_before": [
+        {
+          "Start": "08:15",
+          "End": "09:00",
+          "Task": "Commute to college",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 94
+        },
+        {
+          "Start": "09:00",
+          "End": "12:30",
+          "Task": "Morning lectures",
+          "Category": "study",
+          "Minutes": 210,
+          "Focus": 2,
+          "Energy %": 74
+        },
+        {
+          "Start": "13:30",
+          "End": "16:00",
+          "Task": "Afternoon lectures",
+          "Category": "study",
+          "Minutes": 150,
+          "Focus": 2,
+          "Energy %": 66
+        },
+        {
+          "Start": "16:00",
+          "End": "16:45",
+          "Task": "Commute home",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 77
+        },
+        {
+          "Start": "16:45",
+          "End": "17:15",
+          "Task": "Lunch",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 73
+        },
+        {
+          "Start": "17:15",
+          "End": "18:00",
+          "Task": "Scroll social media",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 67
+        },
+        {
+          "Start": "18:00",
+          "End": "18:45",
+          "Task": "Gaming / series",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 56
+        },
+        {
+          "Start": "18:45",
+          "End": "19:15",
+          "Task": "Household chores",
+          "Category": "chores",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 47
+        },
+        {
+          "Start": "19:15",
+          "End": "21:15",
+          "Task": "Assignment / coding project",
+          "Category": "study",
+          "Minutes": 120,
+          "Focus": 3,
+          "Energy %": 35
+        },
+        {
+          "Start": "21:15",
+          "End": "22:00",
+          "Task": "Revise lecture notes",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 2,
+          "Energy %": 27
+        },
+        {
+          "Start": "22:00",
+          "End": "22:45",
+          "Task": "Blockchain internship course",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 3,
+          "Energy %": 26
+        },
+        {
+          "Start": "23:15",
+          "End": "23:45",
+          "Task": "Dinner",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 25
+        }
+      ]
+    },
+    "neutral": {
+      "wake": "06:30",
+      "bed": "22:45",
+      "before": {
+        "productivity": 58.2,
+        "wellbeing": 50.9
+      },
+      "after": {
+        "productivity": 67.3,
+        "wellbeing": 64.0
+      },
+      "features_before": {
+        "sleep_hours": 6.5,
+        "sleep_consistency": 0.4,
+        "study_hours": 9.5,
+        "peak_focus_ratio": 0.37,
+        "exercise_min": 0,
+        "screen_hours": 8.45,
+        "break_count": 0,
+        "meal_regularity": 0.47,
+        "leisure_hours": 1.5,
+        "task_switches": 12,
+        "free_buffer_min": 90
+      },
+      "features_after": {
+        "sleep_hours": 7.75,
+        "sleep_consistency": 0.9,
+        "study_hours": 9.5,
+        "peak_focus_ratio": 0.58,
+        "exercise_min": 30,
+        "screen_hours": 8.07,
+        "break_count": 1,
+        "meal_regularity": 0.92,
+        "leisure_hours": 0.75,
+        "task_switches": 14,
+        "free_buffer_min": 45
+      },
+      "notes": [
+        "Added Breakfast to keep meals regular.",
+        "Added 30 min exercise - strongest wellbeing lever in the model.",
+        "Could not fit 'Scroll social media' - reduce other tasks or extend the day.",
+        "Inserted 1 short breaks after long focus blocks.",
+        "'Assignment / coding project' scheduled 16:45-18:45 (energy 76%) - deep focus in a peak window.",
+        "'Blockchain internship course' scheduled 20:00-20:45 (energy 49%) - deep focus in a peak window."
+      ],
+      "schedule_after": [
+        {
+          "Start": "07:30",
+          "End": "08:00",
+          "Task": "Breakfast",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 36
+        },
+        {
+          "Start": "08:15",
+          "End": "09:00",
+          "Task": "Commute to college",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 61
+        },
+        {
+          "Start": "09:00",
+          "End": "12:30",
+          "Task": "Morning lectures",
+          "Category": "study",
+          "Minutes": 210,
+          "Focus": 2,
+          "Energy %": 89
+        },
+        {
+          "Start": "13:00",
+          "End": "13:30",
+          "Task": "Lunch",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 52
+        },
+        {
+          "Start": "13:30",
+          "End": "16:00",
+          "Task": "Afternoon lectures",
+          "Category": "study",
+          "Minutes": 150,
+          "Focus": 2,
+          "Energy %": 46
+        },
+        {
+          "Start": "16:00",
+          "End": "16:45",
+          "Task": "Commute home",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 70
+        },
+        {
+          "Start": "16:45",
+          "End": "18:45",
+          "Task": "Assignment / coding project",
+          "Category": "study",
+          "Minutes": 120,
+          "Focus": 3,
+          "Energy %": 76
+        },
+        {
+          "Start": "18:45",
+          "End": "19:00",
+          "Task": "Short break",
+          "Category": "break",
+          "Minutes": 15,
+          "Focus": 1,
+          "Energy %": 70
+        },
+        {
+          "Start": "19:00",
+          "End": "19:30",
+          "Task": "Exercise (walk/workout)",
+          "Category": "exercise",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 65
+        },
+        {
+          "Start": "19:30",
+          "End": "20:00",
+          "Task": "Dinner",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 58
+        },
+        {
+          "Start": "20:00",
+          "End": "20:45",
+          "Task": "Blockchain internship course",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 3,
+          "Energy %": 49
+        },
+        {
+          "Start": "20:45",
+          "End": "21:30",
+          "Task": "Revise lecture notes",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 2,
+          "Energy %": 40
+        },
+        {
+          "Start": "21:30",
+          "End": "22:00",
+          "Task": "Household chores",
+          "Category": "chores",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 34
+        },
+        {
+          "Start": "22:00",
+          "End": "22:45",
+          "Task": "Gaming / series",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 30
+        }
+      ],
+      "schedule_before": [
+        {
+          "Start": "08:15",
+          "End": "09:00",
+          "Task": "Commute to college",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 61
+        },
+        {
+          "Start": "09:00",
+          "End": "12:30",
+          "Task": "Morning lectures",
+          "Category": "study",
+          "Minutes": 210,
+          "Focus": 2,
+          "Energy %": 89
+        },
+        {
+          "Start": "13:30",
+          "End": "16:00",
+          "Task": "Afternoon lectures",
+          "Category": "study",
+          "Minutes": 150,
+          "Focus": 2,
+          "Energy %": 46
+        },
+        {
+          "Start": "16:00",
+          "End": "16:45",
+          "Task": "Commute home",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 70
+        },
+        {
+          "Start": "16:45",
+          "End": "17:15",
+          "Task": "Lunch",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 76
+        },
+        {
+          "Start": "17:15",
+          "End": "18:00",
+          "Task": "Scroll social media",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 77
+        },
+        {
+          "Start": "18:00",
+          "End": "18:45",
+          "Task": "Gaming / series",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 74
+        },
+        {
+          "Start": "18:45",
+          "End": "19:15",
+          "Task": "Household chores",
+          "Category": "chores",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 68
+        },
+        {
+          "Start": "19:15",
+          "End": "21:15",
+          "Task": "Assignment / coding project",
+          "Category": "study",
+          "Minutes": 120,
+          "Focus": 3,
+          "Energy %": 51
+        },
+        {
+          "Start": "21:15",
+          "End": "22:00",
+          "Task": "Revise lecture notes",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 2,
+          "Energy %": 35
+        },
+        {
+          "Start": "22:00",
+          "End": "22:45",
+          "Task": "Blockchain internship course",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 3,
+          "Energy %": 30
+        },
+        {
+          "Start": "23:15",
+          "End": "23:45",
+          "Task": "Dinner",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 26
+        }
+      ]
+    },
+    "night": {
+      "wake": "07:30",
+      "bed": "23:45",
+      "before": {
+        "productivity": 60.2,
+        "wellbeing": 50.7
+      },
+      "after": {
+        "productivity": 67.9,
+        "wellbeing": 64.8
+      },
+      "features_before": {
+        "sleep_hours": 6.5,
+        "sleep_consistency": 0.4,
+        "study_hours": 9.5,
+        "peak_focus_ratio": 0.55,
+        "exercise_min": 0,
+        "screen_hours": 8.45,
+        "break_count": 0,
+        "meal_regularity": 0.47,
+        "leisure_hours": 1.5,
+        "task_switches": 12,
+        "free_buffer_min": 90
+      },
+      "features_after": {
+        "sleep_hours": 7.75,
+        "sleep_consistency": 0.9,
+        "study_hours": 9.5,
+        "peak_focus_ratio": 0.63,
+        "exercise_min": 30,
+        "screen_hours": 8.45,
+        "break_count": 1,
+        "meal_regularity": 0.92,
+        "leisure_hours": 1.5,
+        "task_switches": 15,
+        "free_buffer_min": 60
+      },
+      "notes": [
+        "Added Breakfast to keep meals regular.",
+        "Added 30 min exercise - strongest wellbeing lever in the model.",
+        "Inserted 1 short breaks after long focus blocks.",
+        "'Blockchain internship course' scheduled 18:45-19:30 (energy 73%) - deep focus in a peak window.",
+        "'Assignment / coding project' scheduled 20:00-22:00 (energy 72%) - deep focus in a peak window."
+      ],
+      "schedule_after": [
+        {
+          "Start": "07:30",
+          "End": "08:00",
+          "Task": "Breakfast",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 2
+        },
+        {
+          "Start": "08:15",
+          "End": "09:00",
+          "Task": "Commute to college",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 3
+        },
+        {
+          "Start": "09:00",
+          "End": "12:30",
+          "Task": "Morning lectures",
+          "Category": "study",
+          "Minutes": 210,
+          "Focus": 2,
+          "Energy %": 51
+        },
+        {
+          "Start": "13:00",
+          "End": "13:30",
+          "Task": "Lunch",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 98
+        },
+        {
+          "Start": "13:30",
+          "End": "16:00",
+          "Task": "Afternoon lectures",
+          "Category": "study",
+          "Minutes": 150,
+          "Focus": 2,
+          "Energy %": 76
+        },
+        {
+          "Start": "16:00",
+          "End": "16:45",
+          "Task": "Commute home",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 40
+        },
+        {
+          "Start": "16:45",
+          "End": "17:15",
+          "Task": "Household chores",
+          "Category": "chores",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 39
+        },
+        {
+          "Start": "17:15",
+          "End": "18:00",
+          "Task": "Scroll social media",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 48
+        },
+        {
+          "Start": "18:00",
+          "End": "18:45",
+          "Task": "Revise lecture notes",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 2,
+          "Energy %": 63
+        },
+        {
+          "Start": "18:45",
+          "End": "19:30",
+          "Task": "Blockchain internship course",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 3,
+          "Energy %": 73
+        },
+        {
+          "Start": "19:30",
+          "End": "20:00",
+          "Task": "Dinner",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 77
+        },
+        {
+          "Start": "20:00",
+          "End": "22:00",
+          "Task": "Assignment / coding project",
+          "Category": "study",
+          "Minutes": 120,
+          "Focus": 3,
+          "Energy %": 72
+        },
+        {
+          "Start": "22:00",
+          "End": "22:15",
+          "Task": "Short break",
+          "Category": "break",
+          "Minutes": 15,
+          "Focus": 1,
+          "Energy %": 60
+        },
+        {
+          "Start": "22:15",
+          "End": "22:45",
+          "Task": "Exercise (walk/workout)",
+          "Category": "exercise",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 54
+        },
+        {
+          "Start": "23:00",
+          "End": "23:45",
+          "Task": "Gaming / series",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 43
+        }
+      ],
+      "schedule_before": [
+        {
+          "Start": "08:15",
+          "End": "09:00",
+          "Task": "Commute to college",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 3
+        },
+        {
+          "Start": "09:00",
+          "End": "12:30",
+          "Task": "Morning lectures",
+          "Category": "study",
+          "Minutes": 210,
+          "Focus": 2,
+          "Energy %": 51
+        },
+        {
+          "Start": "13:30",
+          "End": "16:00",
+          "Task": "Afternoon lectures",
+          "Category": "study",
+          "Minutes": 150,
+          "Focus": 2,
+          "Energy %": 76
+        },
+        {
+          "Start": "16:00",
+          "End": "16:45",
+          "Task": "Commute home",
+          "Category": "commute",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 40
+        },
+        {
+          "Start": "16:45",
+          "End": "17:15",
+          "Task": "Lunch",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 39
+        },
+        {
+          "Start": "17:15",
+          "End": "18:00",
+          "Task": "Scroll social media",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 48
+        },
+        {
+          "Start": "18:00",
+          "End": "18:45",
+          "Task": "Gaming / series",
+          "Category": "leisure",
+          "Minutes": 45,
+          "Focus": 1,
+          "Energy %": 63
+        },
+        {
+          "Start": "18:45",
+          "End": "19:15",
+          "Task": "Household chores",
+          "Category": "chores",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 71
+        },
+        {
+          "Start": "19:15",
+          "End": "21:15",
+          "Task": "Assignment / coding project",
+          "Category": "study",
+          "Minutes": 120,
+          "Focus": 3,
+          "Energy %": 76
+        },
+        {
+          "Start": "21:15",
+          "End": "22:00",
+          "Task": "Revise lecture notes",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 2,
+          "Energy %": 67
+        },
+        {
+          "Start": "22:00",
+          "End": "22:45",
+          "Task": "Blockchain internship course",
+          "Category": "study",
+          "Minutes": 45,
+          "Focus": 3,
+          "Energy %": 56
+        },
+        {
+          "Start": "23:15",
+          "End": "23:45",
+          "Task": "Dinner",
+          "Category": "meal",
+          "Minutes": 30,
+          "Focus": 1,
+          "Energy %": 41
+        }
+      ]
+    }
+  },
+  "ablation": {
+    "Original day": [
+      58.2,
+      50.9
+    ],
+    "+ Better sleep (7.75 h, regular)": [
+      61.6,
+      58.7
+    ],
+    "+ Optimized schedule only": [
+      63.1,
+      58.5
+    ],
+    "Full redesign": [
+      67.3,
+      64.0
+    ]
+  }
+}
